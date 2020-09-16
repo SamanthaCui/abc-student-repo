@@ -6,84 +6,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&family=Lobster&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="js/script.js" type="text/javascript"></script>
   <title>Counting Dogs</title>
 </head>
 <body>
 
-  <div class="main">
+  <audio id="myAudio">
+  <source src="sound.mp3" type="audio/mpeg">
+</audio>
+
+      <div class="main">
 
 
-<p>Quality</p>
+        <p>Quantity</p>
 
-  <form action="/action_page.php">
-    <label for="fname"></label>
-    <input type="text" id="fname" name="fname"><br><br>
-    <!-- <span id="demo-1"></span> -->
-  </form>
+        <form action="/action_page.php">
+          <label for="fname"></label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <!-- <span id="demo-1"></span> -->
+        </form>
 
-<p>Size</p>
-  <div class="slidecontainer">
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-    <span id="demo"></span>
-  </div>
+        <p>Size</p>
+        <div class="slidecontainer">
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          <span id="demo"></span>
+        </div>
 
-  </div>
+      </div>
 
-  <button onclick="myFunction()">Generate!</button>
-  <button onclick="myFunction1()">Refresh!</button>
+      <button onclick="myFunction()">Generate!</button>
+      <button onclick="myFunction1()">Refresh!</button>
 
-  <div id="myDIV">
-  </div>
+      <div id="myDIV">
+      </div>
 
+      <script src="js/script.js" type="text/javascript"></script>
 
-
-  <script>
-    var typer = document.getElementById("fname");
-    // var output1 = document.getElementById("demo-1");
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("demo");
-
-    // output1.innerHTML = typer.value;
-    output.innerHTML = slider.value;
-
-    // typer.oninput = function() {
-    //   output1.innerHTML = this.value;
-    // }
-    //
-    slider.oninput = function() {
-      output.innerHTML = this.value;
-
-    }
-
-    function myFunction() {
-      var num = Number(typer.value)+ Number(slider.value);
-      console.log(num);
-
-      var x = document.getElementById("myDIV");
-      x.style.display = "block";
-
-
-      var i;
-      for (i = 0; i < Number(typer.value); i++) {
-
-        console.log(i);
-        var img = document.createElement("img");
-        img.src = "1.png";
-        img.width = Number(slider.value)*5;
-        var srs = document.getElementById("myDIV");
-        srs.appendChild(img);
-
-      }
-    }
-  img.width = Number(slider.value)*5;
-    function myFunction1() {
-      location.reload();
-    }
-
-
-  </script>
-
-
-</body>
-</html>
+    </body>
+    </html>
