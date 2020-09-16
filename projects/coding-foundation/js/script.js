@@ -22,7 +22,7 @@ function myFunction() {
     var srs = document.getElementById("myDIV");
     srs.appendChild(img);
   }
- y.play(); 
+ y.play();
 }
 
 slider.oninput = function() {
@@ -30,7 +30,7 @@ slider.oninput = function() {
 
   var cmm = document.getElementById("myDIV").children;
   for (var i = 0; i < cmm.length; i++) {
-    cmm[i].width = Number(this.value)*5;
+    cmm[i].width = Number(this.value)*6;
   }
 }
 

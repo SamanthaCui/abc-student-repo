@@ -15,7 +15,7 @@ body{
 }
 
 p{
-  font-family: 'Lobster', cursive;
+  font-family: 'Slabo 27px', serif;
   font-size: 30px;
   color: white;
   margin-left: 40px;
@@ -32,6 +32,44 @@ form{
   width:40%;
   margin-top:30px;
   text-align: center;
+}
+
+#fname{
+  width:40%;
+  margin-top:30px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 40%;
+  height: 25px;
+  background: white;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: green;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: white;
+  cursor: pointer;
 }
 
 button{
