@@ -1,4 +1,4 @@
-## This is a README.md page
+## Response to High Infidelity by Elvia Wilk
 
 It is considered difficult to not wear some form of mask while in a virtual setting. With everything happening behind a screen, people have gotten used to using words, emojis and photos to communicate and connect. As these are all part of the virtual body we create, they’ve done us a huge favor, whether it’s hiding or expressing our biological body.
 
