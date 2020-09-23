@@ -110,6 +110,25 @@ img{
   font-family: 'Grandstander', cursive;
 }
 
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: yellow;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
 .web{
   height:1000px;
 }
