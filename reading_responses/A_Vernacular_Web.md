@@ -6,4 +6,4 @@ The question, “How does the Web look now, when it’s no longer seen as the te
 
 Besides being a fan of the retro theme, the more advanced web development throughout the years took advantages of the increase usage of the mobile internet access. One of my first memories of surfing the Web was actually to use my mom’s computer and register for QQ. Back then we would need to go back home and use the computer to chat with our friends versus what we could do on our phones now. 
 
-What the Web looks now, is simply a mixture between the past and the future.
+How the Web looks now, is simply a mixture between the past and the future.
