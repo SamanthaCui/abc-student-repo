@@ -1,8 +1,21 @@
 let button = document. getElementById('button');
 let box = document. getElementById('box');
+let boxAngle = 0;
+let buttonAngle = 0;
 
 button.addEventListener("click",()=>{
 
-  box.style.transform = "rotate(360deg)"
+  boxAngle = boxAngle + 360;
+
+  box.style.transform = "rotate(" + boxAngle +"360deg)";
+
+})
+
+
+box.addEventListener("click",()=>{
+
+  buttonAngle = buttonAngle + 360;
+
+  button.style.transform = "rotate(" + buttonAngle +"360deg)";
 
 })

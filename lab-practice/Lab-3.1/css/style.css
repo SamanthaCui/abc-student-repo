@@ -1,8 +1,17 @@
+body{
+  text-align: center;
+}
+
 #box{
   width: 200px;
   height:200px;
   background-color: #00a1ff;
-  margin:20px;
+  margin:auto;
 
+  transition: transform 2s;
+}
+
+#button{
+  margin:50px;
   transition: transform 2s;
 }
