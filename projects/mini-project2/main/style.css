@@ -24,7 +24,7 @@ body{
 
   position:absolute;
   animation-name: spin;
-  animation-duration: 60s;
+  animation-duration: 62s;
   animation-iteration-count: infinite;
   animation-timing-function:linear;
   animation-timing-function:
@@ -33,12 +33,12 @@ body{
 
 @keyframes spin {
 
-  from{
+  0%{
     transform: rotate(0deg);
     /* transform: translateX(0px); */
   }
 
-  to{
+  100%{
     transform: rotate(360deg);
     /* transform: translateX(70px); */
   }
