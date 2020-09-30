@@ -1,0 +1,46 @@
+body{
+  margin:0;
+}
+
+.box{
+  position:relative;
+}
+
+#second{
+    position:absolute;
+    top:-38px;
+    left:-8px;
+}
+
+.box-1{
+  width:200px;
+  height:200px;
+    left:160px;
+    top:150px;
+    /* background-color: green; */
+    transform-origin:center;
+
+    animation-delay: 13s;
+
+  position:absolute;
+  animation-name: spin;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+  animation-timing-function:
+  /* animation-fill-mode: forwards; */
+}
+
+@keyframes spin {
+
+  from{
+    transform: rotate(0deg);
+    /* transform: translateX(0px); */
+  }
+
+  to{
+    transform: rotate(360deg);
+    /* transform: translateX(70px); */
+  }
+
+}
