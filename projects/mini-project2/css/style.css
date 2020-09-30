@@ -3,4 +3,14 @@ audio { display:none;}
 
 html{
   background-color: black;
+  /* cursor: url("clock.png"),default; */
+}
+
+p{
+  color: white;
+  text-align: center;
+  margin-top: 36%;
+  font-size: 30px;
+  font-family: 'Berkshire Swash', cursive;
+  cursor:grab;
 }
