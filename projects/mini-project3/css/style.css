@@ -1,0 +1,223 @@
+body{
+  margin:0;
+}
+
+.container{
+  width:100%;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.box{
+  width:200px;
+  height:130px;
+  background-color: green;
+  margin:10px;
+  float:left;
+  text-align: center;
+}
+
+
+.overlay{
+  position: relative;
+  background: yellow;
+  width:200px;
+  height:130px;
+}
+
+.box-6{
+  left:400px;
+  position: relative;
+  display:flex;
+  animation: bounce 1s 15, moving6 10s;
+    animation-fill-mode: forwards;
+}
+.box-7{
+  left:400px;
+  position: relative;
+  display:flex;
+  /* animation-delay: 10s; */
+  animation: bounce 1.7s 10 17s, moving7 10s 17s;
+    animation-fill-mode: forwards;
+}
+.box-8{
+  left:400px;
+  position: relative;
+  display:flex;
+  /* animation-delay: 10s; */
+  animation: bounce 2s 9 17s, moving8 10s 17s;
+    animation-fill-mode: forwards;
+}
+.box-9{
+  left:400px;
+  position: relative;
+  display:flex;
+  /* animation-delay: 10s; */
+  animation: bounce 1s 15 17s, moving9 10s 17s;
+    animation-fill-mode: forwards;
+}
+.box-10{
+  left:400px;
+  position: relative;
+  display:flex;
+  /* animation-delay: 10s; */
+  animation: bounce 1.4s 12 17s, moving10 10s 17s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes moving6 {
+  from{
+    /* left:700px; */
+    left:300px;
+  }
+  to{
+    /* left:220px; */
+    left:-517px;
+  }
+}
+
+@keyframes moving7 {
+  from{
+    /* left:700px; */
+    left:300px;
+  }
+  to{
+    /* left:220px; */
+    left:-497px;
+  }
+}
+
+@keyframes moving8 {
+  from{
+    /* left:700px; */
+    left:300px;
+  }
+  to{
+    /* left:220px; */
+    left:-477px;
+  }
+}
+
+@keyframes moving9 {
+  from{
+    /* left:700px; */
+    left:300px;
+  }
+  to{
+    /* left:220px; */
+    left:-457px;
+  }
+}
+
+@keyframes moving10 {
+  from{
+    /* left:700px; */
+    left:300px;
+  }
+  to{
+    /* left:220px; */
+    left:-437px;
+  }
+}
+
+
+@keyframes bounce {
+
+  0%{
+    transform: scale(1,1)
+    translateY(0);
+  }
+  10%{
+    transform: scale(1.1,.9)
+    translateY(0);
+  }
+  30%{
+    transform: scale(.9,1.1)
+    translateY(-200px);
+  }
+  50%{
+    transform: scale(1.05,.95)
+    translateY(0);
+  }
+  57%{
+    transform: scale(1,1)
+    translateY(-7px);
+  }
+  64%{
+    transform: scale(1,1)
+    translateY(0);
+  }
+  100%{
+    transform: scale(1,1)
+    translateY(0);
+  }
+
+}
+
+.box-1{
+  position: relative;
+  animation-name: crush;
+  animation-duration: 4s;
+  animation-delay: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin:bottom;
+  animation-timing-function: ease;
+}
+.box-2{
+  position: relative;
+  animation-name: crush;
+  animation-duration: 4s;
+  animation-delay: 28s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin:bottom;
+  animation-timing-function: ease;
+}
+.box-3{
+  position: relative;
+  animation-name: crush;
+  animation-duration: 4s;
+  animation-delay: 28s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin:bottom;
+  animation-timing-function: ease;
+}
+.box-4{
+  position: relative;
+  animation-name: crush;
+  animation-duration: 4s;
+  animation-delay: 28s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin:bottom;
+  animation-timing-function: ease;
+}
+.box-5{
+  position: relative;
+  animation-name: crush;
+  animation-duration: 4s;
+  animation-delay: 28s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin:bottom;
+  animation-timing-function: ease;
+}
+
+@keyframes crush {
+
+  From{
+    height:130px;
+    transform: translateY(0px);
+  }
+  to{
+    height:0px;
+    transform: translateY(70px);
+  }
+
+}
