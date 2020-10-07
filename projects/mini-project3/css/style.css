@@ -1,20 +1,43 @@
 body{
   margin:0;
+  background-color: white;
 }
 
 .container{
   width:100%;
   height:100vh;
   display: flex;
+   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  position: absolute;
+}
+
+.layer1{
+  width:100%;
+  height:100vh;
+  display: flex;
+  float:left;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+}
+.layer2{
+  /* background-color: red; */
+  width:100%;
+  height:100vh;
+  display: flex;
+  float: right;
+  left:50%;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
 }
 
 .box{
-  width:200px;
+  width:100px;
   height:130px;
-  background-color: green;
+  background-color: #4C0099;
+  color: #4C0099;
   margin:10px;
   float:left;
   text-align: center;
@@ -23,104 +46,118 @@ body{
 
 .overlay{
   position: relative;
-  background: yellow;
-  width:200px;
+  width:100px;
   height:130px;
+  font-size: 100px;
+  color: black;
+font-family: 'Inconsolata', monospace;
+padding-top: 30px;
+  /* background-color: #B266FF; */
 }
 
 .box-6{
-  left:400px;
+  left:50%;
   position: relative;
-  display:flex;
-  animation: bounce 1s 15, moving6 10s;
+    margin:10px;
+    text-align: center;
+  animation: bounce 1s 15, moving6 10s, coll 4s 1 10s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 .box-7{
-  left:400px;
+  left:50%;
   position: relative;
-  display:flex;
+    margin:10px;
+    text-align: center;
   /* animation-delay: 10s; */
-  animation: bounce 1.7s 10 17s, moving7 10s 17s;
+  animation: bounce 1.7s 10 15s, moving7 10s 15s, coll 4s 1 26s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 .box-8{
-  left:400px;
+  left:50%;
   position: relative;
-  display:flex;
+    margin:10px;
+    text-align: center;
   /* animation-delay: 10s; */
-  animation: bounce 2s 9 17s, moving8 10s 17s;
+  animation: bounce 2s 9 15s, moving8 10s 15s, coll 4s 1 26s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 .box-9{
-  left:400px;
+  left:50%;
   position: relative;
-  display:flex;
+    margin:10px;
+    text-align: center;
   /* animation-delay: 10s; */
-  animation: bounce 1s 15 17s, moving9 10s 17s;
+  animation: bounce 1s 14 15s, moving9 10s 15s, coll 4s 1 26s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 .box-10{
-  left:400px;
+  left:50%;
   position: relative;
-  display:flex;
+    margin:10px;
+    text-align: center;
   /* animation-delay: 10s; */
-  animation: bounce 1.4s 12 17s, moving10 10s 17s;
+  animation: bounce 1.4s 12 15s, moving10 10s 15s, coll 4s 1 26s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 
+@keyframes coll {
+  from{
+    /* background-color: #B266FF; */
+    color: black;
+  }
+  to{
+    /* background-color: white; */
+    color: #4C0099;
+  }
+}
 
 @keyframes moving6 {
   from{
-    /* left:700px; */
-    left:300px;
+    left:30%;
   }
   to{
-    /* left:220px; */
-    left:-517px;
+    left:-50%;
   }
 }
 
 @keyframes moving7 {
   from{
-    /* left:700px; */
-    left:300px;
+    left:30%;
   }
   to{
-    /* left:220px; */
-    left:-497px;
+    left:-50%;
   }
 }
 
 @keyframes moving8 {
   from{
-    /* left:700px; */
-    left:300px;
+    left:30%;
   }
   to{
-    /* left:220px; */
-    left:-477px;
+    left:-50%;
   }
 }
 
 @keyframes moving9 {
   from{
-    /* left:700px; */
-    left:300px;
+    left:30%;
   }
   to{
-    /* left:220px; */
-    left:-457px;
+    left:-50%;
   }
 }
 
 @keyframes moving10 {
   from{
-    /* left:700px; */
-    left:300px;
+    left:30%;
   }
   to{
-    /* left:220px; */
-    left:-437px;
+    left:-50%;
   }
 }
 
@@ -172,7 +209,7 @@ body{
   position: relative;
   animation-name: crush;
   animation-duration: 4s;
-  animation-delay: 28s;
+  animation-delay: 26s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   transform-origin:bottom;
@@ -182,7 +219,7 @@ body{
   position: relative;
   animation-name: crush;
   animation-duration: 4s;
-  animation-delay: 28s;
+  animation-delay: 26s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   transform-origin:bottom;
@@ -192,7 +229,7 @@ body{
   position: relative;
   animation-name: crush;
   animation-duration: 4s;
-  animation-delay: 28s;
+  animation-delay: 26s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   transform-origin:bottom;
@@ -202,7 +239,7 @@ body{
   position: relative;
   animation-name: crush;
   animation-duration: 4s;
-  animation-delay: 28s;
+  animation-delay: 26s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   transform-origin:bottom;
