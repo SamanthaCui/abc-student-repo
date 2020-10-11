@@ -17,7 +17,7 @@ body{
   height:100vh;
   display: flex;
   float: left;
-    opacity: 0.5;
+    opacity: 0.7;
   justify-content: center;
   align-items: center;
   position:absolute;
@@ -27,7 +27,7 @@ body{
   width:100%;
   height:100vh;
   display: flex;
-  opacity: 0.5;
+  opacity: 0.7;
   justify-content: center;
   align-items: center;
   position:absolute;
@@ -52,6 +52,7 @@ body{
   border-radius: 100px / 90px;
   /* color: #4C0099; */
   text-align: center;
+    filter: blur(3px);
   position: relative;
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -62,6 +63,7 @@ body{
   /* background-color:  white; */
   border-radius: 100px / 90px;
   /* color: #4C0099; */
+      filter: blur(5px);
   text-align: center;
   position: relative;
   font-family: 'Noto Sans JP', sans-serif;
@@ -81,7 +83,7 @@ body{
 }
 .box-6{
   position:relative;
-  left: 67%;
+  left: 69%;
   top:-25%;
   animation-name: drip6;
   animation-duration: 5s;
@@ -98,18 +100,18 @@ body{
     transform: scale(0.1);
   }
   to{
-    background-color: yellow;
+    background-color: #80C9FF;
     transform: scale(1);
   }
 
 }
 @keyframes drip6 {
   from{
-    background-color: black;
+    background-color: white;
     transform: scale(0.1);
   }
   to{
-    background-color: orange;
+    background-color: #7FCCFF;
     transform: scale(1);
   }
 
@@ -149,18 +151,18 @@ body{
     transform: scale(0.1);
   }
   to{
-    background-color:yellow;
+    background-color:#A280FF;
     transform: scale(1);
   }
 
 }
 @keyframes drip7 {
   from{
-    background-color: black;
+    background-color: white;
     transform: scale(0.1);
   }
   to{
-    background-color: orange;
+    background-color: #B498FF;
     transform: scale(1);
   }
 
@@ -198,18 +200,18 @@ body{
     transform: scale(0.1);
   }
   to{
-        background-color:yellow;
+        background-color:#FFA280;
     transform: scale(1);
   }
 
 }
 @keyframes drip8 {
   from{
-    background-color: black;
+    background-color: white;
     transform: scale(0.1);
   }
   to{
-    background-color: orange;
+    background-color: #FFB397;
     transform: scale(1);
   }
 
@@ -221,7 +223,7 @@ body{
   top:20%;
   animation-name: drip4;
   animation-duration: 4s;
-  animation-delay: 10s;
+  animation-delay: 8s;
   animation-iteration-count:1;
   transform-origin:center;
   animation-fill-mode: forwards;
@@ -234,7 +236,7 @@ body{
   top:20%;
   animation-name: drip9;
   animation-duration: 5s;
-    animation-delay: 10s;
+    animation-delay: 8s;
   animation-iteration-count:1;
   transform-origin:center;
   animation-fill-mode: forwards;
@@ -247,18 +249,18 @@ body{
     transform: scale(0.1);
   }
   to{
-        background-color:yellow;
+        background-color:#FFDA80;
     transform: scale(1);
   }
 
 }
 @keyframes drip9 {
   from{
-    background-color: black;
+    background-color: white;
     transform: scale(0.1);
   }
   to{
-    background-color: orange;
+    background-color: #FFE094;
     transform: scale(1);
   }
 
@@ -266,11 +268,11 @@ body{
 
 .box-5{
   position:relative;
-  left: -55%;
+  left: -52%;
   top:15%;
   animation-name: drip5;
   animation-duration: 6s;
-  animation-delay: 14s;
+  animation-delay: 10s;
   animation-iteration-count:1;
   transform-origin:center;
   animation-fill-mode: forwards;
@@ -279,11 +281,11 @@ body{
 }
 .box-10{
   position:relative;
-  left: -51.5%;
+  left: -52%;
   top:15%;
   animation-name: drip10;
     animation-duration: 6s;
-  animation-delay: 14s;
+  animation-delay: 10s;
   animation-iteration-count:1;
   transform-origin:center;
   animation-fill-mode: forwards;
@@ -296,18 +298,67 @@ body{
     transform: scale(0.1);
   }
   to{
-        background-color:yellow;
+        background-color:#FCF77C;
     transform: scale(1);
   }
 
 }
 @keyframes drip10 {
   from{
-    background-color: black;
+    background-color: white;
     transform: scale(0.1);
   }
   to{
-    background-color: orange;
+    background-color: #FCF891;
+    transform: scale(1);
+  }
+
+}
+
+.box-11{
+  position:relative;
+  left: -75%;
+  top:-9%;
+  animation-name: drip11;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  /* background-color: black; */
+}
+.box-12{
+  position:relative;
+  left: -75%;
+  top:-9%;
+  animation-name: drip12;
+    animation-duration: 6s;
+  animation-delay: 3s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  /* background-color: black; */
+}
+@keyframes drip11 {
+  from{
+        background-color:white;
+    transform: scale(0.1);
+  }
+  to{
+        background-color:#A2FD86;
+    transform: scale(1);
+  }
+
+}
+@keyframes drip12 {
+  from{
+    background-color: white;
+    transform: scale(0.1);
+  }
+  to{
+    background-color: #B5FF9E;
     transform: scale(1);
   }
 
