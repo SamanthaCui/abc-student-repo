@@ -17,7 +17,7 @@ body{
   height:100vh;
   display: flex;
   float: left;
-    opacity: 0.7;
+  opacity: 0.7;
   justify-content: center;
   align-items: center;
   position:absolute;
@@ -38,13 +38,104 @@ body{
   width:100%;
   height:100vh;
   display: flex;
-  opacity: 0.5;
+  opacity: 0.7;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  /* background-color: red; */
+}
+.layer3-1{
+  width:100%;
+  height:100vh;
+  display: flex;
+  opacity: 0.7;
   justify-content: center;
   align-items: center;
   position:absolute;
   /* background-color: red; */
 }
 
+.layer3-2{
+  width:100%;
+  height:100vh;
+  display: flex;
+  opacity: 0.7;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  /* background-color: red; */
+}
+
+.layer4{
+  width:100%;
+  height:100vh;
+  display: flex;
+  opacity: 0.7;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  /* background-color: red; */
+}
+.layer4-1{
+  width:100%;
+  height:100vh;
+  display: flex;
+  opacity: 0.7;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  /* background-color: red; */
+}
+.layer5{
+  width:100%;
+  height:100vh;
+  display: flex;
+  opacity: 0.7;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  /* background-color: red; */
+}
+.layer5-1{
+  width:100%;
+  height:100vh;
+  display: flex;
+  opacity: 0.7;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  /* background-color: red; */
+}
+.layer6{
+  width:100%;
+  height:100vh;
+  display: flex;
+  opacity: 0.7;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  /* background-color: red; */
+}
+.layer7{
+  width:100%;
+  height:100vh;
+  display: flex;
+  opacity: 0.7;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  /* background-color: red; */
+}
+.layer8{
+  width:100%;
+  height:100vh;
+  display: flex;
+  opacity: 0.7;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  /* background-color: red; */
+}
 .box{
   width:200px;
   height:180px;
@@ -52,7 +143,7 @@ body{
   border-radius: 100px / 90px;
   /* color: #4C0099; */
   text-align: center;
-    filter: blur(3px);
+  filter: blur(3px);
   position: relative;
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -63,7 +154,19 @@ body{
   /* background-color:  white; */
   border-radius: 100px / 90px;
   /* color: #4C0099; */
-      filter: blur(5px);
+  filter: blur(5px);
+  text-align: center;
+  position: relative;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.overlay2{
+  width:140px;
+  height:140px;
+  background-color:  red;
+  border-radius: 70px / 70px;
+  /* color: #4C0099; */
+  filter: blur(10px);
   text-align: center;
   position: relative;
   font-family: 'Noto Sans JP', sans-serif;
@@ -73,9 +176,10 @@ body{
   position:relative;
   left: 70%;
   top:-25%;
-  animation-name: drip1;
+    animation: drip1 5s 1, blur1 1s 1 13s;
+  /* animation-name: drip1;
   animation-duration: 5s;
-  animation-iteration-count:1;
+  animation-iteration-count:1; */
   transform-origin:center;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
@@ -85,9 +189,10 @@ body{
   position:relative;
   left: 69%;
   top:-25%;
-  animation-name: drip6;
+  animation: drip6 5s 1, blur1 1s 1 13s;
+  /* animation-name: drip6;
   animation-duration: 5s;
-  animation-iteration-count:1;
+  animation-iteration-count:1; */
   transform-origin:center;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
@@ -121,10 +226,11 @@ body{
   position:relative;
   left: 40%;
   top:-8%;
-  animation-name: drip2;
+  animation: drip2 5s 1 3s, blur1 1s 1 14s;
+  /* animation-name: drip2;
   animation-duration: 5s;
   animation-delay: 3s;
-  animation-iteration-count:1;
+  animation-iteration-count:1; */
   transform-origin:center;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
@@ -134,10 +240,11 @@ body{
   position:relative;
   left: 38%;
   top:-8%;
-  animation-name: drip7;
+  animation: drip7 5s 1 3s, blur1 1s 1 14s;
+  /* animation-name: drip7;
   animation-duration: 5s;
-      animation-delay:3s;
-  animation-iteration-count:1;
+  animation-delay:3s;
+  animation-iteration-count:1; */
   transform-origin:center;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
@@ -172,10 +279,11 @@ body{
   position:relative;
   left: 10%;
   top:1%;
-  animation-name: drip3;
+  animation: drip3 6s 1 4s, blur1 1s 1 15s;
+  /* animation-name: drip3;
   animation-duration: 6s;
   animation-delay: 4s;
-  animation-iteration-count:1;
+  animation-iteration-count:1; */
   transform-origin:center;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
@@ -185,10 +293,11 @@ body{
   position:relative;
   left: 10%;
   top:1%;
-  animation-name: drip8;
+  animation: drip8 5s 1 4s, blur1 1s 1 15s;
+  /* animation-name: drip8;
   animation-duration: 5s;
-      animation-delay:4s;
-  animation-iteration-count:1;
+  animation-delay:4s;
+  animation-iteration-count:1; */
   transform-origin:center;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
@@ -196,11 +305,11 @@ body{
 }
 @keyframes drip3 {
   from{
-        background-color:white;
+    background-color:white;
     transform: scale(0.1);
   }
   to{
-        background-color:#FFA280;
+    background-color:#FFA280;
     transform: scale(1);
   }
 
@@ -221,10 +330,11 @@ body{
   position:relative;
   left: -20%;
   top:20%;
-  animation-name: drip4;
+  animation: drip4 4s 1 6s, blur1 1s 1 16s;
+  /* animation-name: drip4;
   animation-duration: 4s;
-  animation-delay: 8s;
-  animation-iteration-count:1;
+  animation-delay: 6s;
+  animation-iteration-count:1; */
   transform-origin:center;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
@@ -234,10 +344,11 @@ body{
   position:relative;
   left: -18%;
   top:20%;
-  animation-name: drip9;
+  animation: drip9 5s 1 6s, blur1 1s 1 16s;
+  /* animation-name: drip9;
   animation-duration: 5s;
-    animation-delay: 8s;
-  animation-iteration-count:1;
+  animation-delay: 6s;
+  animation-iteration-count:1; */
   transform-origin:center;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
@@ -245,11 +356,11 @@ body{
 }
 @keyframes drip4 {
   from{
-        background-color:white;
+    background-color:white;
     transform: scale(0.1);
   }
   to{
-        background-color:#FFDA80;
+    background-color:#FFDA80;
     transform: scale(1);
   }
 
@@ -270,10 +381,11 @@ body{
   position:relative;
   left: -52%;
   top:15%;
-  animation-name: drip5;
+  animation: drip5 6s 1 8s, blur1 1s 1 17s;
+  /* animation-name: drip5;
   animation-duration: 6s;
-  animation-delay: 10s;
-  animation-iteration-count:1;
+  animation-delay: 8s;
+  animation-iteration-count:1; */
   transform-origin:center;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
@@ -283,10 +395,11 @@ body{
   position:relative;
   left: -52%;
   top:15%;
-  animation-name: drip10;
-    animation-duration: 6s;
-  animation-delay: 10s;
-  animation-iteration-count:1;
+  animation: drip10 6s 1 8s, blur1 1s 1 17s;
+  /* animation-name: drip10;
+  animation-duration: 6s;
+  animation-delay: 8s;
+  animation-iteration-count:1; */
   transform-origin:center;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
@@ -294,11 +407,11 @@ body{
 }
 @keyframes drip5 {
   from{
-        background-color:white;
+    background-color:white;
     transform: scale(0.1);
   }
   to{
-        background-color:#FCF77C;
+    background-color:#FCF77C;
     transform: scale(1);
   }
 
@@ -319,10 +432,11 @@ body{
   position:relative;
   left: -75%;
   top:-9%;
-  animation-name: drip11;
+  animation: drip11 6s 1 9s, blur1 1s 1 18s;
+  /* animation-name: drip11;
   animation-duration: 6s;
-  animation-delay: 3s;
-  animation-iteration-count:1;
+  animation-delay: 9s;
+  animation-iteration-count:1; */
   transform-origin:center;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
@@ -332,10 +446,11 @@ body{
   position:relative;
   left: -75%;
   top:-9%;
-  animation-name: drip12;
-    animation-duration: 6s;
-  animation-delay: 3s;
-  animation-iteration-count:1;
+  animation: drip12 6s 1 9s, blur1 1s 1 18s;
+  /* animation-name: drip12;
+  animation-duration: 6s;
+  animation-delay: 9s;
+  animation-iteration-count:1; */
   transform-origin:center;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
@@ -343,11 +458,11 @@ body{
 }
 @keyframes drip11 {
   from{
-        background-color:white;
+    background-color:white;
     transform: scale(0.1);
   }
   to{
-        background-color:#A2FD86;
+    background-color:#A2FD86;
     transform: scale(1);
   }
 
@@ -364,243 +479,649 @@ body{
 
 }
 
-
-/* .overlay{
-position: relative;
-text-align: center;
-width:300px;
-height:150px;
-background-color:  green;
-margin: 40px;
-padding: 10px;
-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-animation-name: zoo;
-animation-duration: 4s;
-animation-iteration-count:infinite;
-transform-origin:center;
-animation-timing-function: ease;
+@keyframes blur1 {
+  from{
+      filter: blur(3px);
+  }
+  to{
+      filter: blur(10px);
+  }
 }
 
-.overlay2{
-text-align: center;
-width:300px;
-height:150px;
-background-color:  white;
-width: 126px;
-height: 180px;
-margin: 40px;
-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-animation-name: zoom;
-animation-duration: 4s;
-animation-iteration-count:infinite;
-transform-origin:center;
-animation-timing-function: ease;
+.case-1{
+  position:relative;
+  left: 50%;
+  top:-35%;
+    opacity: 0;
+  background-color: #80C9FF;
+  animation-name: fade1;
+  animation-duration: 3s;
+    animation-delay: 13s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }
 
-@keyframes zoom {
-from{
-transform: scale(0.1) rotate(20deg);
-}
-to{
-transform: scale(1) rotate(20deg);
-}
-}
-
-@keyframes zoo {
-from{
-transform: scale(0.1) rotate(-50deg);
-}
-to{
-transform: scale(1) rotate(-50deg);
-}
-} */
-
-/* .box-6{
-position: relative;
-text-align: center;
-animation: bounce 1s 15, moving6 10s, coll 4s 1 10s;
-animation-fill-mode: forwards;
-animation-timing-function: ease;
-}
-.box-7{
-position: relative;
-text-align: center;
-animation: bounce 1.7s 10 15s, moving7 10s 15s, coll 4s 1 26s;
-animation-fill-mode: forwards;
-animation-timing-function: ease;
-}
-.box-8{
-position: relative;
-text-align: center;
-animation: bounce 2s 9 15s, moving8 10s 15s, coll 4s 1 26s;
-animation-fill-mode: forwards;
-animation-timing-function: ease;
-}
-.box-9{
-position: relative;
-text-align: center;
-animation: bounce 1s 14 15s, moving9 10s 15s, coll 4s 1 26s;
-animation-fill-mode: forwards;
-animation-timing-function: ease;
-}
-.box-10{
-position: relative;
-text-align: center;
-animation: bounce 1.4s 12 15s, moving10 10s 15s, coll 4s 1 26s;
-animation-fill-mode: forwards;
-animation-timing-function: ease;
-} */
-
-
-
-/* @keyframes coll {
-from{
-color: black;
-}
-to{
-color: #4C0099;
-}
+.case-2{
+  position:relative;
+  left: 30%;
+  top:-40%;
+    opacity: 0;
+  background-color: #89B7FF;
+  animation-name: fade1;
+  animation-duration: 3s;
+    animation-delay: 13s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }
 
-@keyframes moving6 {
-from{
-left:30%;
-}
-to{
-left:-50%;
-}
-}
-
-@keyframes moving7 {
-from{
-left:30%;
-}
-to{
-left:-50%;
-}
+.case-3{
+  position:relative;
+  left: 10%;
+  top:-38%;
+    opacity: 0;
+  background-color: #9A92FF;
+  animation-name: fade1;
+  animation-duration: 3s;
+    animation-delay: 13s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }
 
-@keyframes moving8 {
-from{
-left:30%;
-}
-to{
-left:-50%;
-}
-}
-
-@keyframes moving9 {
-from{
-left:30%;
-}
-to{
-left:-50%;
-}
+.case-4{
+  position:relative;
+  left: -3%;
+  top:-25%;
+    opacity: 0;
+  background-color: #A280FF;
+  animation-name: fade1;
+  animation-duration: 2s;
+    animation-delay: 13s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }
 
-@keyframes moving10 {
-from{
-left:30%;
+.case-5{
+  position:relative;
+  left: -7%;
+  top:-25%;
+    opacity: 0;
+  background-color: #91A5FF;
+  animation-name: fade1;
+  animation-duration: 2s;
+    animation-delay: 13s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }
-to{
-left:-50%;
+
+.case-6{
+  position:relative;
+  left: 60%;
+  top:-9%;
+    opacity: 0;
+  background-color: #80C9FF;
+  animation-name: fade1;
+  animation-duration: 2s;
+    animation-delay: 13s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }
+
+.case-7{
+  position:relative;
+  left: 48%;
+  top:3%;
+    opacity: 0;
+  background-color: #89B7FF;
+  animation-name: fade1;
+  animation-duration: 2s;
+    animation-delay: 13s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.case-8{
+  position:relative;
+  left: 25%;
+  top:-5%;
+    opacity: 0;
+  background-color: #91A5FF;
+  animation-name: fade1;
+  animation-duration: 2s;
+    animation-delay: 13s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.case-9{
+  position:relative;
+  left: 13%;
+  top:10%;
+    opacity: 0;
+  background-color: #9A92FF;
+  animation-name: fade1;
+  animation-duration: 2s;
+    animation-delay: 13s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.case-10{
+  position:relative;
+  left: -10%;
+  top:10%;
+    opacity: 0;
+  background-color:#A280FF;
+  animation-name: fade1;
+  animation-duration: 2s;
+    animation-delay: 13s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }
 
 
-@keyframes bounce {
-
-0%{
-transform: scale(1,1)
-translateY(0);
-}
-10%{
-transform: scale(1.1,.9)
-translateY(0);
-}
-30%{
-transform: scale(.9,1.1)
-translateY(-200px);
-}
-50%{
-transform: scale(1.05,.95)
-translateY(0);
-}
-57%{
-transform: scale(1,1)
-translateY(-7px);
-}
-64%{
-transform: scale(1,1)
-translateY(0);
-}
-100%{
-transform: scale(1,1)
-translateY(0);
+.case-11{
+  position:relative;
+  left: 40%;
+  top:-38%;
+    opacity: 0;
+      opacity: 0;
+  background-color:#80C9FF;
+  animation-name: fade1;
+  animation-duration: 2s;
+    animation-delay: 12s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }
 
-} */
-
-/* .box-1{
-position: relative;
-animation-name: crush;
-animation-duration: 4s;
-animation-delay: 10s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;
-transform-origin:bottom;
-animation-timing-function: ease;
-}
-.box-2{
-position: relative;
-animation-name: crush;
-animation-duration: 4s;
-animation-delay: 26s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;
-transform-origin:bottom;
-animation-timing-function: ease;
-}
-.box-3{
-position: relative;
-animation-name: crush;
-animation-duration: 4s;
-animation-delay: 26s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;
-transform-origin:bottom;
-animation-timing-function: ease;
-}
-.box-4{
-position: relative;
-animation-name: crush;
-animation-duration: 4s;
-animation-delay: 26s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;
-transform-origin:bottom;
-animation-timing-function: ease;
-}
-.box-5{
-position: relative;
-animation-name: crush;
-animation-duration: 4s;
-animation-delay: 26s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;
-transform-origin:bottom;
-animation-timing-function: ease;
+.case-12{
+  position:relative;
+  left: 33%;
+  top:-25%;
+    opacity: 0;
+  background-color:#80C9FF;
+  animation-name: fade1;
+  animation-duration: 2s;
+    animation-delay: 12s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }
 
-@keyframes crush {
+@keyframes fade1 {
+  from{
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  to{
+      transform: scale(1);
+    opacity: 1;
+  }
 
-From{
-height:130px;
-transform: translateY(0px);
-}
-to{
-height:0px;
-transform: translateY(70px);
 }
 
-} */
+.block-1{
+  position:relative;
+  left: 33%;
+  top:-20%;
+      opacity: 0;
+  background-color:#A280FF;
+  animation-name: fade1;
+  animation-duration: 2s;
+animation-delay: 14s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.block-2{
+  position:relative;
+  left: 18%;
+  top:-33%;
+      opacity: 0;
+  background-color:#B989DF;
+  animation-name: fade1;
+  animation-duration: 2s;
+animation-delay: 14s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.block-3{
+  position:relative;
+  left: -3%;
+  top:-33%;
+      opacity: 0;
+  background-color:#E89AA0;
+  animation-name: fade1;
+  animation-duration: 2s;
+animation-delay: 14s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.block-4{
+  position:relative;
+  left: -10%;
+  top:-20%;
+      opacity: 0;
+  background-color:#D191C0;
+  animation-name: fade1;
+  animation-duration: 2s;
+animation-delay: 14s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.block-5{
+  position:relative;
+  left: -30%;
+  top:-20%;
+      opacity: 0;
+  background-color:#FFA280;
+  animation-name: fade1;
+  animation-duration: 2s;
+animation-delay: 14s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.block-6{
+  position:relative;
+  left: 28%;
+  top:23%;
+      opacity: 0;
+  background-color:#B989DF;
+  animation-name: fade1;
+  animation-duration: 2s;
+animation-delay: 14s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.block-7{
+  position:relative;
+  left: 11%;
+  top:10%;
+      opacity: 0;
+  background-color:#D191C0;
+  animation-name: fade1;
+  animation-duration: 2s;
+animation-delay: 14s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.block-8{
+  position:relative;
+  left: -4%;
+  top:30%;
+      opacity: 0;
+  background-color:#E89AA0;
+  animation-name: fade1;
+  animation-duration: 2s;
+animation-delay: 14s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.chain-1{
+  position:relative;
+  left: 15%;
+  top:-11%;
+  opacity: 0;
+  background-color:#FFB080;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay: 15s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+.chain-2{
+  position:relative;
+  left: -5%;
+  top:-17%;
+  opacity: 0;
+  background-color:#FFCC80;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay: 15s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+.chain-3{
+  position:relative;
+  left: -15%;
+  top:-3%;
+  opacity: 0;
+  background-color:#FFBE80;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay: 15s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+.chain-4{
+  position:relative;
+  left: -30%;
+  top:0%;
+  opacity: 0;
+  background-color:#FFDA80;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay: 15s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+.chain-6{
+  position:relative;
+  left: 13%;
+  top:25%;
+  opacity: 0;
+  background-color:#FFBE80;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay: 15s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+.chain-7{
+  position:relative;
+  left: -8%;
+  top:38%;
+  opacity: 0;
+  background-color:#FFDA80;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay: 15s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+.chain-8{
+  position:relative;
+  left: -13%;
+  top:38%;
+  opacity: 0;
+  background-color:#FFCC80;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay: 15s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.book-1{
+  position:relative;
+  left: 8%;
+  top:0%;
+  opacity: 0;
+  background-color:#FEE97E;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay:16s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.book-2{
+  position:relative;
+  left: -4%;
+  top:-13%;
+  opacity: 0;
+  background-color:#FEE17F;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay:16s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.book-3{
+  position:relative;
+  left:-13%;
+  top:40%;
+  opacity: 0;
+  background-color:#FEE17F;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay:16s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.book-4{
+  position:relative;
+  left:-33%;
+  top:35%;
+  opacity: 0;
+  background-color:#FEE97E;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay:16s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.book-5{
+  position:relative;
+  left: -53%;
+  top:37%;
+  opacity: 0;
+  background-color:#FDF07D;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay:16s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.mac-1{
+  position:relative;
+  left: 0%;
+  top:0%;
+  opacity: 0;
+  background-color:#CFFA81;
+  animation-name: fade1;
+  animation-delay: 16s;
+  animation-duration: 2s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.mac-2{
+  position:relative;
+  left: -13%;
+  top:-17%;
+  opacity: 0;
+  background-color:#B9FC84;
+  animation-name: fade1;
+  animation-delay: 17s;
+  animation-duration: 2s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.mac-3{
+  position:relative;
+  left:-21%;
+  top:-25%;
+  opacity: 0;
+  background-color:#E8E382;
+  animation-name: fade1;
+  animation-delay: 17s;
+  animation-duration: 2s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.mac-4{
+  position:relative;
+  left:-50%;
+  top:30%;
+  opacity: 0;
+  background-color:#E6F97F;
+  animation-name: fade1;
+  animation-delay: 17s;
+  animation-duration: 2s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.mac-5{
+  position:relative;
+  left: -63%;
+  top:13%;
+  opacity: 0;
+  background-color:#CFFA81;
+  animation-name: fade1;
+  animation-delay: 17s;
+  animation-duration: 2s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.grass-1{
+  position:relative;
+  left: -20%;
+  top:15%;
+  opacity: 0;
+  background-color:#B9FC84;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay: 18s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.grass-2{
+  position:relative;
+  left: -35%;
+  top:-5%;
+  opacity: 0;
+  background-color:#A2FD86;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay: 18s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.grass-3{
+  position:relative;
+  left:-45%;
+  top:-25%;
+  opacity: 0;
+  background-color:#A2FD86;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay: 18s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.grass-4{
+  position:relative;
+  left:-50%;
+  top:-35%;
+  opacity: 0;
+  background-color:#A2FD86;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay: 18s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.grass-5{
+  position:relative;
+  left: -53%;
+  top:-35%;
+  opacity: 0;
+  background-color:#B9FC84;
+  animation-name: fade1;
+  animation-duration: 2s;
+  animation-delay: 18s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
