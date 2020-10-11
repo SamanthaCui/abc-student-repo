@@ -17,10 +17,11 @@ body{
   height:100vh;
   display: flex;
   float: left;
+    opacity: 0.5;
   justify-content: center;
   align-items: center;
   position:absolute;
-  background-color: blue;
+  /* background-color: blue; */
 }
 .layer2{
   width:100%;
@@ -30,7 +31,7 @@ body{
   justify-content: center;
   align-items: center;
   position:absolute;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .layer3{
@@ -41,107 +42,362 @@ body{
   justify-content: center;
   align-items: center;
   position:absolute;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .box{
   width:200px;
-  height:100px;
-  background-color:  yellow;
-  border-radius: 100px / 50px;
+  height:180px;
+  /* background-color:  white; */
+  border-radius: 100px / 90px;
   /* color: #4C0099; */
   text-align: center;
+  position: relative;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-
 .overlay{
-  position: relative;
+  width:180px;
+  height:162px;
+  /* background-color:  white; */
+  border-radius: 100px / 90px;
+  /* color: #4C0099; */
   text-align: center;
-  width:300px;
-  height:150px;
-  background-color:  green;
-    /* transform: rotate(-50deg); */
-    margin: 40px;
-    padding: 10px;
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  animation-name: zoo;
-  animation-duration: 4s;
-  animation-iteration-count:infinite;
+  position: relative;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.box-1{
+  position:relative;
+  left: 70%;
+  top:-25%;
+  animation-name: drip1;
+  animation-duration: 5s;
+  animation-iteration-count:1;
   transform-origin:center;
+  animation-fill-mode: forwards;
   animation-timing-function: ease;
+  /* background-color: black; */
+}
+.box-6{
+  position:relative;
+  left: 67%;
+  top:-25%;
+  animation-name: drip6;
+  animation-duration: 5s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  /* background-color: black; */
+}
+
+@keyframes drip1 {
+  from{
+    background-color: white;
+    transform: scale(0.1);
+  }
+  to{
+    background-color: yellow;
+    transform: scale(1);
+  }
+
+}
+@keyframes drip6 {
+  from{
+    background-color: black;
+    transform: scale(0.1);
+  }
+  to{
+    background-color: orange;
+    transform: scale(1);
+  }
+
+}
+
+.box-2{
+  position:relative;
+  left: 40%;
+  top:-8%;
+  animation-name: drip2;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  /* background-color: black; */
+}
+.box-7{
+  position:relative;
+  left: 38%;
+  top:-8%;
+  animation-name: drip7;
+  animation-duration: 5s;
+      animation-delay:3s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  /* background-color: black; */
+}
+
+@keyframes drip2 {
+  from{
+
+    background-color:white;
+    transform: scale(0.1);
+  }
+  to{
+    background-color:yellow;
+    transform: scale(1);
+  }
+
+}
+@keyframes drip7 {
+  from{
+    background-color: black;
+    transform: scale(0.1);
+  }
+  to{
+    background-color: orange;
+    transform: scale(1);
+  }
+
+}
+
+.box-3{
+  position:relative;
+  left: 10%;
+  top:1%;
+  animation-name: drip3;
+  animation-duration: 6s;
+  animation-delay: 4s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  /* background-color: black; */
+}
+.box-8{
+  position:relative;
+  left: 10%;
+  top:1%;
+  animation-name: drip8;
+  animation-duration: 5s;
+      animation-delay:4s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  /* background-color: black; */
+}
+@keyframes drip3 {
+  from{
+        background-color:white;
+    transform: scale(0.1);
+  }
+  to{
+        background-color:yellow;
+    transform: scale(1);
+  }
+
+}
+@keyframes drip8 {
+  from{
+    background-color: black;
+    transform: scale(0.1);
+  }
+  to{
+    background-color: orange;
+    transform: scale(1);
+  }
+
+}
+
+.box-4{
+  position:relative;
+  left: -20%;
+  top:20%;
+  animation-name: drip4;
+  animation-duration: 4s;
+  animation-delay: 10s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  /* background-color: black; */
+}
+.box-9{
+  position:relative;
+  left: -18%;
+  top:20%;
+  animation-name: drip9;
+  animation-duration: 5s;
+    animation-delay: 10s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  /* background-color: black; */
+}
+@keyframes drip4 {
+  from{
+        background-color:white;
+    transform: scale(0.1);
+  }
+  to{
+        background-color:yellow;
+    transform: scale(1);
+  }
+
+}
+@keyframes drip9 {
+  from{
+    background-color: black;
+    transform: scale(0.1);
+  }
+  to{
+    background-color: orange;
+    transform: scale(1);
+  }
+
+}
+
+.box-5{
+  position:relative;
+  left: -55%;
+  top:15%;
+  animation-name: drip5;
+  animation-duration: 6s;
+  animation-delay: 14s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  /* background-color: black; */
+}
+.box-10{
+  position:relative;
+  left: -51.5%;
+  top:15%;
+  animation-name: drip10;
+    animation-duration: 6s;
+  animation-delay: 14s;
+  animation-iteration-count:1;
+  transform-origin:center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  /* background-color: black; */
+}
+@keyframes drip5 {
+  from{
+        background-color:white;
+    transform: scale(0.1);
+  }
+  to{
+        background-color:yellow;
+    transform: scale(1);
+  }
+
+}
+@keyframes drip10 {
+  from{
+    background-color: black;
+    transform: scale(0.1);
+  }
+  to{
+    background-color: orange;
+    transform: scale(1);
+  }
+
+}
+
+
+/* .overlay{
+position: relative;
+text-align: center;
+width:300px;
+height:150px;
+background-color:  green;
+margin: 40px;
+padding: 10px;
+border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+animation-name: zoo;
+animation-duration: 4s;
+animation-iteration-count:infinite;
+transform-origin:center;
+animation-timing-function: ease;
 }
 
 .overlay2{
-  /* position: relative; */
-  text-align: center;
-  width:300px;
-  height:150px;
-  background-color:  white;
-  width: 126px;
-  height: 180px;
-    /* transform: rotate(20deg); */
-    margin: 40px;
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  animation-name: zoom;
-  animation-duration: 4s;
-  animation-iteration-count:infinite;
-  transform-origin:center;
-  animation-timing-function: ease;
+text-align: center;
+width:300px;
+height:150px;
+background-color:  white;
+width: 126px;
+height: 180px;
+margin: 40px;
+border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+animation-name: zoom;
+animation-duration: 4s;
+animation-iteration-count:infinite;
+transform-origin:center;
+animation-timing-function: ease;
 }
 
 @keyframes zoom {
-  from{
-    transform: scale(0.1) rotate(20deg);
-  }
-  to{
-    transform: scale(1) rotate(20deg);
-  }
+from{
+transform: scale(0.1) rotate(20deg);
+}
+to{
+transform: scale(1) rotate(20deg);
+}
 }
 
 @keyframes zoo {
-  from{
-    transform: scale(0.1) rotate(-50deg);
-  }
-  to{
-    transform: scale(1) rotate(-50deg);
-  }
+from{
+transform: scale(0.1) rotate(-50deg);
 }
+to{
+transform: scale(1) rotate(-50deg);
+}
+} */
 
 /* .box-6{
-  position: relative;
-  text-align: center;
-  animation: bounce 1s 15, moving6 10s, coll 4s 1 10s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease;
+position: relative;
+text-align: center;
+animation: bounce 1s 15, moving6 10s, coll 4s 1 10s;
+animation-fill-mode: forwards;
+animation-timing-function: ease;
 }
 .box-7{
-  position: relative;
-  text-align: center;
-  animation: bounce 1.7s 10 15s, moving7 10s 15s, coll 4s 1 26s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease;
+position: relative;
+text-align: center;
+animation: bounce 1.7s 10 15s, moving7 10s 15s, coll 4s 1 26s;
+animation-fill-mode: forwards;
+animation-timing-function: ease;
 }
 .box-8{
-  position: relative;
-  text-align: center;
-  animation: bounce 2s 9 15s, moving8 10s 15s, coll 4s 1 26s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease;
+position: relative;
+text-align: center;
+animation: bounce 2s 9 15s, moving8 10s 15s, coll 4s 1 26s;
+animation-fill-mode: forwards;
+animation-timing-function: ease;
 }
 .box-9{
-  position: relative;
-  text-align: center;
-  animation: bounce 1s 14 15s, moving9 10s 15s, coll 4s 1 26s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease;
+position: relative;
+text-align: center;
+animation: bounce 1s 14 15s, moving9 10s 15s, coll 4s 1 26s;
+animation-fill-mode: forwards;
+animation-timing-function: ease;
 }
 .box-10{
-  position: relative;
-  text-align: center;
-  animation: bounce 1.4s 12 15s, moving10 10s 15s, coll 4s 1 26s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease;
+position: relative;
+text-align: center;
+animation: bounce 1.4s 12 15s, moving10 10s 15s, coll 4s 1 26s;
+animation-fill-mode: forwards;
+animation-timing-function: ease;
 } */
 
 
