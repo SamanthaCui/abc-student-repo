@@ -93,9 +93,8 @@ function openWindow3(){
 
   },randomTime1);
 
-
-
 }
+
 function openWindow4(){
   console.log("a new window should open");
   let newWindow=window.open('wheel4/index.html','','width=250,height=200,left =355,top =800');
