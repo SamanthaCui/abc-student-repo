@@ -1,5 +1,10 @@
 # Alcohol Art
 
-![alt text](https://samanthacui.github.io/abc-student-repo/projects/project-a/a-interactive/img/demo.gif "Logo Title Text 1")
+![Animated Cover](img/demo.gif)
 
-## Installation
+## Description
+
+
+## Quick Access
+The website can be easily accessed [here](https://samanthacui.github.io/abc-student-repo/projects/project-a/a-interactive/).
+
