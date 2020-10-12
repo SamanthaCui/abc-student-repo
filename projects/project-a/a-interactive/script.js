@@ -21,16 +21,16 @@ container.addEventListener("click", (event)=>{
   let x4 = x + 200* Math.random();
   let y4 = y + 200* Math.random();
 
-  drop(x, y,colour,1);
-  drop(x1, y1,colour,2);
-  drop(x2, y2,colour,3);
-  drop(x3, y3,colour,2);
-  drop(x4, y4,colour,3);
+  drop(x, y,colour,1,50);
+  drop(x1, y1,colour,2,20);
+  drop(x2, y2,colour,3,10);
+  drop(x3, y3,colour,2,20);
+  drop(x4, y4,colour,3,10);
 })
 
 
 
-function drop(x, y,colour,id){
+function drop(x, y,colour,id,size){
   let firstdrop = document.createElement('div');
   firstdrop.className = "drop" + id;
 
@@ -51,8 +51,8 @@ function drop(x, y,colour,id){
   let drop8 = document.createElement('div');
   drop8.className = "drop" + id;
 
-  let ranW = 50 + Math.random()*10;
-  let ranH = 50 + Math.random()*10;
+  let ranW = size + Math.random()*10;
+  let ranH = size + Math.random()*10;
 
   // let colour = colors[Math.floor((Math.random() * 20))];
 
