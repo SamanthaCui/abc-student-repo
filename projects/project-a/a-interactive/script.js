@@ -22,10 +22,10 @@ container.addEventListener("click", (event)=>{
   let y4 = y + 200* Math.random();
 
   drop(x, y,colour,1,50);
-  drop(x1, y1,colour,2,20);
-  drop(x2, y2,colour,3,10);
-  drop(x3, y3,colour,2,20);
-  drop(x4, y4,colour,3,10);
+  drop(x1, y1,colour,2,10);
+  drop(x2, y2,colour,3,20);
+  drop(x3, y3,colour,2,10);
+  drop(x4, y4,colour,3,20);
 })
 
 
