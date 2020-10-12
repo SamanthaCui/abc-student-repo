@@ -9,7 +9,6 @@ The website can be easily accessed [here](https://samanthacui.github.io/abc-stud
 This project takes inspiration of the Alcohol Art form. Utilizing CSS animation, it hopes to recreate the process of when watery paint meeting each other, and blending together. 
 
 ## Challenges
-![Animated Cover](img/demo.gif)
 For the first version of my project, it was more of a "performance". There was no interaction. I was happy with the visual effects. But it still felt like something was missing. I then discussed it with Professor Leon on how we could make it more interactive. Through several rounds of changes, it led to the current version.
 
 ## Compromises
