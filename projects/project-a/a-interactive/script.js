@@ -2,6 +2,7 @@ let container = document.getElementById("container")
 var colors = ["#FEA3AA", "#F8B88B", "#FAF884", "#BAED91","#B2CEFE","#F2A2E8","#F7F6CF","#B6D8F2","#CCD4BF","#BEB4C5","#E6A57E","#9AD9DB","#98D4BB","#C47482","#DEC4D6","#DB93A5","#AAD9CD","#FFD9CF"];
 
 container.addEventListener("click", (event)=>{
+
   // console.log(event.clientX)
   let x = event.clientX;
   let y = event.clientY;
