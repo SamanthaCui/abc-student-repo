@@ -11,4 +11,4 @@ Remember the days when you go on Wikipedia and copy/paste some definitions strai
 Well, you're in "luck"!<br/>
 Try and do that with this Chrome extension. :P
 
-BTW: Try and see what happens if you click the mouse.  
+BTW: Guess what happens if you click the mouse :D  
