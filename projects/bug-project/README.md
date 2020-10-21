@@ -1,9 +1,9 @@
-# Alcohol Art
+# Eraser
 
-![Animated Cover](img/demo.gif)
+![Animated Cover](demo.gif)
 
 ## Quick Access
-The website can be easily accessed [here](https://samanthacui.github.io/abc-student-repo/projects/project-a/a-interactive/). (Best to open with Chrome) 
+The chrome extention can be easily download [here](https://samanthacui.github.io/abc-student-repo/projects/project-a/a-interactive/). (Best to open with Chrome)
 
 ## Description
 This project takes inspiration from the Alcohol Art form. Utilizing CSS animation, it hopes to recreate the process of when watery paint meeting each other and blending. 
