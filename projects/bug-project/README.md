@@ -1,4 +1,4 @@
-# Eraser
+# Highlighter
 
 ![Animated Cover](demo.gif)
 

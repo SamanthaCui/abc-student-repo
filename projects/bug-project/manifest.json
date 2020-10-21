@@ -1,7 +1,7 @@
 {
-  "name":"mini4",
+  "name":"Highlighter",
   "version":"1.0",
-  "description": "My first extention which will replace me",
+  "description": "Getting information from Wikipedia has never been easier :D",
   "manifest_version": 2,
   "content_scripts":[
     {
