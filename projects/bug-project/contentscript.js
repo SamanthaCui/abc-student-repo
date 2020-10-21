@@ -1,35 +1,38 @@
 let container = document.getElementById("bodyContent");
 
+ container.style.cursor = 'none';
+
 container.addEventListener("mousemove", (event)=>{
   let scroll = this.scrollY;
   let x = event.clientX;
   let y = event.clientY+this.scrollY;
   console.log("mouse at", x, y);
 
-  if (mousePressed == true){
+  let r = 255;
+  let g = 255;
+  let b = 255;
+  disapper(x,y,r,g,b);
+
+
+  container.addEventListener("click", (event)=>{
 
     let r = Math.random()*255;
     let g = Math.random()*255;
     let b = Math.random()*255;
-  }else{
-    let r = 255;
-    let g = 255;
-    let b = 255;
-  }
-  disapper(x,y,r,g,b);
+    disapper(x,y,r,g,b);
+  })
 })
-
 
 function disapper(xpos,ypos,R,G,B){
 
   let box = document.createElement('div');
-  let ranW = 30;
-  let ranH = 30;
+  let ranW = 40;
+  let ranH = 40;
 
   box.style.display = "block";
   box.style.position = "absolute";
   box.style.left = xpos-210+ "px";
-  box.style.top = ypos-150+ "px";
+  box.style.top = ypos-153+ "px";
   box.style.width = ranW + "px";
   box.style.height = ranH + "px";
   box.style.backgroundColor = "rgb("+R+","+G+","+B+")";
