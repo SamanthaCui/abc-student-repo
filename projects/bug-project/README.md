@@ -1,4 +1,4 @@
-# Highlighter
+# "Highlighter"
 
 ![Animated Cover](demo.gif)
 
