@@ -10,10 +10,6 @@
       "js":["contentscript.js"]
     }
   ],
-  "browser_action":{
-    "default_icon":"tent.png",
-    "default_popup":"popup/index.html"
-  },
   "background": {
     "scripts": ["background.js"],
     "persistent": false
