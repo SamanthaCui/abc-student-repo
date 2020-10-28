@@ -1,57 +1,38 @@
-var div = document.createElement('div');
-var div2=document.createElement('div');
-var div3=document.createElement('div');
+let container = document.getElementById("bodyContent");
+let currentValue = 0;
 
-div.innerHTML = document.body.innerHTML;
-div2.innerHTML = document.body.innerHTML;
-div3.innerHTML = document.body.innerHTML;
-div.id="old";
-div2.id="new";
-div3.id="new2";
+var links = document.getElementsByTagName('a');
 
-document.body.innerHTML = "";
 
-document.body.appendChild(div);
-document.body.appendChild(div2);
-document.body.appendChild(div3);
+chrome.runtime.sendMessage({type:"getCurrentValue"}, function(response) {
+  console.log("response is",response);
+  currentValue = response.value;
+  // num.innerHTML = currentValue;
+});
 
- container.style.cursor = 'none';
-
-container.addEventListener("mousemove", (event)=>{
+container.addEventListener("click", (event)=>{
   let scroll = this.scrollY;
   let x = event.clientX;
   let y = event.clientY+this.scrollY;
-  console.log("mouse at", x, y);
+  // console.log("mouse at", x, y);
+  if (currentValue<30){
+    currentValue = currentValue + 1;
+    console.log(currentValue);
+    chrome.runtime.sendMessage({type:"increasedValue"});
+  }else{
+    console.log("noooooooooooooo");
+    for(var i=0;i<links.length;i++)
+    {
+      links[i].href='#';
+      links[i].onclick = function(){  return false; };
+    }
+  }
 
-  let r = 255;
-  let g = 255;
-  let b = 255;
-  disapper(x,y,r,g,b);
-
-
-  container.addEventListener("click", (event)=>{
-
-    let r = Math.random()*255;
-    let g = Math.random()*255;
-    let b = Math.random()*255;
-    disapper(x,y,r,g,b);
-  })
 })
 
-function disapper(xpos,ypos,R,G,B){
 
-  let box = document.createElement('div');
-  let ranW = 40;
-  let ranH = 40;
-
-  box.style.display = "block";
-  box.style.position = "absolute";
-  box.style.left = xpos-210+ "px";
-  box.style.top = ypos-153+ "px";
-  box.style.width = ranW + "px";
-  box.style.height = ranH + "px";
-  box.style.backgroundColor = "rgb("+R+","+G+","+B+")";
-  box.style.borderRadius = ranW/2+"px / "+(ranH/2)+"px";
-
-  container.appendChild(box);
-}
+var popup = window.open(
+    chrome.extension.getURL("popup/index.html"),
+    "exampleName",
+    "width=400,height=200"
+);
