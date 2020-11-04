@@ -1,0 +1,112 @@
+html {
+  height: 100%;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  /* cursor: url("../img/planet.png"), default; */
+  /* background-image: url('https://i.pinimg.com/originals/76/ab/99/76ab9984534e3d210d5cb2fbe0c26399.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+body {
+  overflow: auto;
+	background-color: black;
+	width: 1000px;
+	height: 1080px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6%;
+	padding: 0px;
+  font-family: 'Rancho', cursive;
+}
+
+/* #demo{
+  font-family: 'Satisfy', cursive;
+}*/
+
+ #text{
+  color: black;
+  font-size: 100px;
+  font-family: 'Rancho', cursive;
+  border: none;
+  margin-left: 10px;
+  background-color: white;
+}
+
+button{
+  /* margin-top: 20p */
+  /* margin-left: 16px; */
+  margin-bottom: 30px;
+  /* font-family: 'Rancho', cursive; */
+}
+
+#button4:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+#button4 {
+  /* background-color: white; */
+  /* color: black; */
+  border: 2px solid #C0C0C0;
+  font-size: 38px;
+  font-family: 'Rancho', cursive;
+  /* font-family: 'Eater', cursive; */
+  width: 150px;
+  height: 70px;
+  margin-left: 25px;
+}
+
+#button5:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+#button5 {
+  /* background-color: white; */
+  /* color: black; */
+  border: 2px solid #C0C0C0;
+  font-size: 38px;
+font-family: 'Rancho', cursive;
+  /* font-family: 'Eater', cursive; */
+  width: 150px;
+  height: 70px;
+  margin-left: 20px;
+}
+
+#button6:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+#button6 {
+  /* background-color: white; */
+  /* color: black; */
+  border: 2px solid #C0C0C0;
+  font-size: 38px;
+font-family: 'Rancho', cursive;
+  /* font-family: 'Eater', cursive; */
+  width: 250px;
+  height: 70px;
+  margin-left: 20px;
+}
+
+#button7:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+#button7 {
+  /* background-color: white; */
+  /* color: black; */
+  border: 2px solid #C0C0C0;
+  font-size: 38px;
+font-family: 'Rancho', cursive;
+  /* font-family: 'Eater', cursive; */
+  width: 150px;
+  height: 70px;
+  margin-left: 20px;
+}
