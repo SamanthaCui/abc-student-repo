@@ -1,13 +1,10 @@
 let words=[];
 
-var limit = 6;
+var limit = 5;
 let newWords = [];
-// let contentElement = document.getElementById("content");
 
 
 let text = document.body.innerHTML;
-// let text = document.getElementsByTagName("p");
-// console.log(text);
 
 let letters = text.split("<br>");
 
@@ -15,7 +12,6 @@ let joined1 = letters.join(" ");
 
 let letters2 = joined1.split(/\b/);
 let letters3 = letters2.slice(21);
-// console.log(letters3);
 
 function getWordLengths(str) {
   let len = [];
@@ -26,10 +22,7 @@ function getWordLengths(str) {
   }
   return len;
 }
-//
-// in replac are all the words that are 5 letters
 let replac = getWordLengths(letters3);
-// console.log(replac);
 
 
 function findWords(arra){
@@ -37,8 +30,6 @@ function findWords(arra){
     var num = letters3.indexOf(String(arra[i]));
     // in words are all the words that are 5 letters
     words.push(String(arra[i]));
-    // letters2[num]= "nnnnnnnnn";
-
   }
 }
 findWords(replac);
@@ -71,17 +62,16 @@ function getSimilarWord(inputWord, callback){
   })
 }
 
-
 for (i=0;i<words.length;i++){
   getSimilarWord(words[i], (similarwords)=>{
   });
 }
 
 function changeWords(wordd,original){
-    var num = letters3.indexOf(String(original));
-      letters3[num]= String(wordd);
-      // console.log(letters2);
-      let joined2 = letters3.join(" ");
-      document.body.innerHTML = joined2;
-      // return letters2;
+  var num = letters3.indexOf(String(original));
+  letters3[num]= String(wordd);
+  // console.log(letters2);
+  let joined2 = letters3.join(" ");
+  document.body.innerHTML = joined2;
+  // return letters2;
 }
