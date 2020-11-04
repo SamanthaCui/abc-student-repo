@@ -1,30 +1,18 @@
-
-
-var txt;
-  var number = prompt("Please enter the longest word you remember:", "Supercalifragilisticexpialidocious");
-  if (number == null || number == "") {
-    txt = 0;
-  } else {
-    txt = number.length;
-  }
-
-
 let words=[];
 
-var limit = txt;
-console.log(limit);
+var limit = 5;
 let newWords = [];
 
+let container = document.getElementById("bodyContent");
+console.log(container);
 let text = document.body.innerHTML;
-let box = document.createElement('div');
-
+let text = do;
 
 let letters = text.split("<br>");
-// console.log(letters);
+
 let joined1 = letters.join(" ");
-// console.log(joined1);
+
 let letters2 = joined1.split(/\b/);
-// console.log(letters2);
 let letters3 = letters2.slice(21);
 
 function getWordLengths(str) {
@@ -37,7 +25,6 @@ function getWordLengths(str) {
   return len;
 }
 let replac = getWordLengths(letters3);
-console.log(replac);
 
 
 function findWords(arra){
@@ -65,10 +52,10 @@ function getSimilarWord(inputWord, callback){
     if (Number(replacer.length) > Number(1)){
       let long = Number(replacer.length);
       let number = Math.floor(Math.random() * long);
-      console.log(inputWord+"-" +replacer[number]);
+      // console.log(replacer[number]);
       changeWords(String(replacer[number]),inputWord);
     }else{
-      console.logs(inputWord+"-" +replacer[0]);
+      // console.log(replacer[1]);
       changeWords(String(replacer[0]),inputWord);
     }
   })
@@ -85,18 +72,8 @@ for (i=0;i<words.length;i++){
 function changeWords(wordd,original){
   var num = letters3.indexOf(String(original));
   letters3[num]= String(wordd);
-
+  // console.log(letters2);
   let joined2 = letters3.join(" ");
-
   document.body.innerHTML = joined2;
-
-  // box.innerHTML = joined2;
-   document.body.style.fontFamily = "sans-serif";
- document.body.style.color = "black";
- document.body.style.fontSize = "large";
- document.body.style.left = "300px";
- document.body.style.width = "60%";
- document.body.style.height = "100vh";
-  contentElement.appendChild(box);
   // return letters2;
 }

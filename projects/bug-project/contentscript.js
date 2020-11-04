@@ -1,5 +1,10 @@
 let container = document.getElementById("bodyContent");
 
+var x = document.getElementById("bodyContent").textContent;
+console.log(x);
+
+// console.log(container);
+
  container.style.cursor = 'none';
 
 container.addEventListener("mousemove", (event)=>{
