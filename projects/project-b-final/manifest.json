@@ -1,0 +1,29 @@
+{
+  "name":"Project B",
+  "version":"1.0",
+  "description": "",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "tabs"
+  ],
+  "content_scripts":[
+    {
+      "matches":["https://www.cs.cmu.edu/~spok/grimmtmp/009.txt"],
+      "js":["findAndReplaceDOMText.js","axioslibrary.min.js", "contentscript.js"]
+    }
+  ],
+  "browser_action":{
+    "default_icon":"a.png"
+  },
+  "icons": { "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
