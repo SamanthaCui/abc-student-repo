@@ -11,7 +11,7 @@
   ],
   "content_scripts":[
     {
-      "matches":["<all_urls>"],
+      "matches":["https://www.cs.cmu.edu/~spok/grimmtmp/009.txt"],
       "js":["findAndReplaceDOMText.js","axioslibrary.min.js", "contentscript.js"]
     }
   ],

@@ -1,11 +1,28 @@
 
+let randomTime = 1000;
+//
+// setTimeout(function(){
+//
+//
+// },randomTime);
+
 
 var txt;
   var number = prompt("Please enter the longest word you remember:", "Supercalifragilisticexpialidocious");
-  if (number == null || number == "") {
-    txt = 0;
-  } else {
+  if (number.length <= 4) {
+      alert("I bet you'd remember something longer!☹️");
+      location.reload();
+  } else if (number == null || number == ""){
+    alert("Don't trick me 🙄, try again, WITH ACTUAL WORDS!");
+    location.reload();
+  }else{
     txt = number.length;
+    let randomTime = 1000;
+
+    setTimeout(function(){
+  alert("Now enjoy your reading!🤪");
+
+    },randomTime);
   }
 
 
@@ -36,8 +53,12 @@ function getWordLengths(str) {
   }
   return len;
 }
+
+
+  // let replac = getWordLengths(letters3,numer);
+
 let replac = getWordLengths(letters3);
-console.log(replac);
+// console.log(replac);
 
 
 function findWords(arra){
@@ -94,7 +115,7 @@ function changeWords(wordd,original){
    document.body.style.fontFamily = "sans-serif";
  document.body.style.color = "black";
  document.body.style.fontSize = "large";
- document.body.style.left = "300px";
+ document.body.style.left = "200px";
  document.body.style.width = "60%";
  document.body.style.height = "100vh";
   contentElement.appendChild(box);
