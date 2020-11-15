@@ -11,10 +11,12 @@ const port = 3000;
 
 //define routers behavior, what to return on which request
 
-
+let samcount = 0;
 // "/" route
 app.get('/', (req, res) => {
-  console.log("someone is looking at this site!");
+  samcount = samcount + 1;
+  console.log(samcount + " people are looking at this site!");
+  // console.log("someone is looking at this site!");
   // console.log(req);
   // res.send('Hello World!');
   res.sendFile(__dirname + '/sam/index.html');

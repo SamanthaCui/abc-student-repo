@@ -10,16 +10,20 @@ const app = express();
 const port = 3000;
 
 //define routers behavior, what to return on which request
+// app.use(express.static("public"));
 
+let samcount = 0;
 
 // "/" route
 app.get('/', (req, res) => {
-  console.log("someone is looking at this site!");
+  samcount = samcount + 1;
+  console.log(samcount + " people are looking at this site!");
+  // console.log("someone is looking at this site!");
   // console.log(req);
   // res.send('Hello World!');
   res.sendFile(__dirname + '/sam/index.html');
-  console.log(req.query.time);
-    console.log(req.query.name);
+  // console.log(req.query.time);
+    // console.log(req.query.name);
     // console.log(__dirname);
     //So __dirname is a variable holding the absolute path of the project.
     //ocalhost:3000/?name=sam&time=day
