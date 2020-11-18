@@ -1,7 +1,7 @@
 
 const express = require('express');
 const app = express();
-const port = 3000; //glitch: const port = process.env.PORT
+const port = process.env.PORT; //glitch: const port = process.env.PORT
 // const secret="blossom";
 
 let gifts = ['🌕'];
