@@ -2,6 +2,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT; //glitch: const port = process.env.PORT
+// const port = 3009;
 // const secret="blossom";
 
 let gifts = ['🌕'];
@@ -10,11 +11,12 @@ let gifts3 = ['It is afraid of the full moon'];
 
 app.use(express.static('public'));
 
-// let much = gifts.length;
-// console.log(much);
+let much = gifts.length;
+console.log(much);
 // let number = Math.floor((Math.random() * much));
-let number = 0;
+let number = much - 1;
 const secret=gifts2[number];
+console.log(number);
 // let much = gifts.length;
 // console.log(much);
 // let number = Math.floor((Math.random() * much));
@@ -67,7 +69,6 @@ app.get('/getGifts', (request, response) => {
   console.log("someone asked for gifts");
 })
 
-number = number +1;
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
