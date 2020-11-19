@@ -10,9 +10,10 @@ let gifts3 = ['It is afraid of the full moon'];
 
 app.use(express.static('public'));
 
-let much = gifts.length;
-console.log(much);
-let number = Math.floor((Math.random() * much));
+// let much = gifts.length;
+// console.log(much);
+// let number = Math.floor((Math.random() * much));
+let number = 0;
 const secret=gifts2[number];
 // let much = gifts.length;
 // console.log(much);
@@ -66,7 +67,7 @@ app.get('/getGifts', (request, response) => {
   console.log("someone asked for gifts");
 })
 
-
+number = number +1;
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
