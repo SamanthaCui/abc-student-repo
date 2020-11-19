@@ -11,18 +11,26 @@ let gifts3 = ['It is afraid of the full moon'];
 
 app.use(express.static('public'));
 
-let much = gifts.length;
-console.log(much);
-// let number = Math.floor((Math.random() * much));
-let number = much - 1;
-const secret=gifts2[number];
-console.log(number);
+// let much = gifts.length;
+// console.log(much);
+//
+// let number = much - 1;
+// const secret=gifts2[number];
+// console.log(number);
+
+
 // let much = gifts.length;
 // console.log(much);
 // let number = Math.floor((Math.random() * much));
 // const secret=gifts2[number];
 
 app.get("/getRandomWord", (request, response) => {
+  let much = gifts.length;
+  console.log(much);
+
+  let number = much - 1;
+  const secret=gifts2[number];
+  console.log(number);
   // console.log(much);
   // const secret=gifts2[number];
   // let much = gifts.length;
@@ -34,6 +42,12 @@ app.get("/getRandomWord", (request, response) => {
 
 // "/" route
 app.get('/secret', (request, response) => {
+  let much = gifts.length;
+  console.log(much);
+
+  let number = much - 1;
+  const secret=gifts2[number];
+  console.log(number);
   let query = request.query;
   let guess = query.word;
   if(guess == secret){
