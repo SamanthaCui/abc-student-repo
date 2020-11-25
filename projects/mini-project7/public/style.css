@@ -1,0 +1,51 @@
+:root{
+  --borderThickness:4px;
+}
+
+body{
+  margin:0;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+p{
+  margin:0px;
+  font-size: 16px;
+}
+
+#face{
+  width:600px;
+  height:300px;
+}
+
+#bubble{
+  width:179px;
+  height:130px;
+}
+
+.wrapper{
+  width:100vw;
+  height:100vh;
+  display: flex;
+   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.layer1{
+  width:100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+}
+
+.layer2{
+  width:100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+}
