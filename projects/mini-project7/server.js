@@ -2,6 +2,7 @@ let express = require('express');
 let app = express();
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
+// const port = process.env.PORT;
 
 let user_online=0;
 
@@ -28,6 +29,6 @@ io.on('connection', (socket) => {
 
 
 
-http.listen(3330, () => {
+http.listen(3000, () => {
   console.log('listening on *:3000');
 });
