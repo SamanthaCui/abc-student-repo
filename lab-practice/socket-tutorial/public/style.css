@@ -1,0 +1,82 @@
+:root{
+  --borderThickness:4px;
+}
+
+body{
+  margin:0;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: yellow;
+}
+
+p{
+  margin:0px;
+  font-size: 16px;
+}
+
+.wrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  height:100vh;
+}
+.chat-wrapper{
+  width:300px;
+  /* height:400px; */
+  border: var(--borderThickness) solid black;
+  border-radius: 10px;
+  padding:15px;
+  box-shadow: 0 0 20px 20px black;
+    background-color: white;
+}
+
+
+.name-box{
+  border: var(--borderThickness)  solid black;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  text-align: right;
+  padding:10px;
+  margin-bottom: 5px;
+}
+
+.chat-box{
+  border: var(--borderThickness)  solid black;
+  margin-bottom: 5px;
+  padding:10px;
+}
+
+#chat{
+  height:160px;
+  overflow: scroll;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+#chat li{
+  padding: 0;
+  margin-bottom: 3px;
+}
+
+#chat li:nth-child(odd){
+  background-color: black;
+  color: white;
+}
+
+#chat li .sender{
+color:blue;
+}
+
+.message-box{
+  border: var(--borderThickness)  solid black;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 10px;
+}
+
+#send{
+  margin-left: 5px;
+}
