@@ -8,10 +8,10 @@ let  background= document.getElementById('wrapper');
 socket.on("user_number",(data)=>{
   // user_number.innerHTML=data;
   console.log(data);
-  if (data <=10){
+  if (data <=7){
     pic.style.width = (179 * ((data-1) *0.2 + 1))+"px";
     pic.style.height = (130 * ((data-1) *0.2 + 1))+"px";
-  }else if(data>10)
+  }else if(data>7)
   {
     pic.style.display = "none";
     // face.style.display = "none";
