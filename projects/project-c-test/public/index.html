@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/socket.io/socket.io.js"></script>
+
+  <title></title>
+</head>
+<body>
+  <audio id="blowing" autoplay>
+    <source src="audio/blowing.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="pop" autoplay>
+      <source src="audio/pop.mp3" type="audio/mp3">
+
+      </audio>
+
+
+      <div id="wrapper">
+        <div id="layer1">
+          <img src="img/face.jpeg" alt="" id="face">
+        </div>
+        <div class="layer2">
+          <img src="img/bubble.png" alt="" id="bubble">
+        </div>
+        <div class="layer0">
+          <button id='buttonID'>Take a deep breath in 🍬</button>
+        </div>
+      </div>
+
+      <script src="script.js" type="text/javascript"></script>
+    </body>
+    </html>
