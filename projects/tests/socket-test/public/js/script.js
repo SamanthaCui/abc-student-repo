@@ -1,7 +1,7 @@
 // let button = window.document.getElementById("button");
 
 let socket=io();
-let img = window.document.getElementById("image");
+// let img = window.document.getElementById("image");
 var w = window.innerWidth;
 var h = window.innerHeight;
 
@@ -22,15 +22,21 @@ let topMouse = screen.height/2 - heightMouse/1.5;
 let leftLight = screen.width-widthLight/1.5;
 let topLight = screen.height/2 - heightMouse/1.5 + heightMouse/2 - heightLight/2;
 
+
+
 console.log(w,h);
 
 let mousePop=window.open('popup/index.html','','width='+widthMouse+',height='+heightMouse+',left ='+leftMouse+',top ='+topMouse);
 
 let lightPop=window.open('light/index.html','','width='+widthLight+',height='+heightLight+',left ='+leftLight+',top ='+topLight);
 
+
+
 socket.on("user_number",(data)=>{
   userNum = data;
+  addImage(userNum);
 })
+
 
 
 function openWindow1(){
@@ -44,14 +50,15 @@ function openWindow1(){
 
   let data = { id:userNum, posx: x, posy: y };
   socket.emit('pos', data);
-  //console.log(data);
-
-  // console.log(x,y);
 }
+
+
 
 const scale = (num, in_min, in_max, out_min, out_max) => {
   return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
+
+
 
 
 let randomTime = 1000;
@@ -59,16 +66,33 @@ let randomTime = 1000;
 socket.on("user_number",(data)=>{
   setTimeout(function(){
     let box = mousePop.document.getElementById("box");
-
     box.addEventListener("mousemove", openWindow1);
-
   },randomTime);
 })
 
 
-function display(x,y){
 
 
+function addImage(userNum){
+  var img = document.createElement("IMG");
+  let imgID = userNum;
+  img.setAttribute("id", imgID);
+  img.setAttribute("src", "img/cursor.png");
+  console.log(img);
+  document.body.appendChild(img);
+
+  socket.on("positions", (data)=>{
+    let positionX = data.posx;
+    let positionY = data.posy;
+    display(positionX,positionY,userNum);
+  })
+}
+
+
+
+
+function display(x,y,num){
+  let img = window.document.getElementById(num);
   let xpos = scale(x, 0,500,0,w);
   let ypos = scale(y, 0,500,0,h);
 
@@ -100,8 +124,8 @@ function display(x,y){
 
 
 
-socket.on("positions", (data)=>{
-  let positionX = data.posx;
-  let positionY = data.posy;
-  display(positionX,positionY);
-})
+// socket.on("positions", (data)=>{
+//   let positionX = data.posx;
+//   let positionY = data.posy;
+//   display(positionX,positionY);
+// })
