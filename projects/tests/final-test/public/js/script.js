@@ -19,8 +19,9 @@ let leftMouse = screen.width - widthLight - widthMouse;
 let topMouse = screen.height/2 - heightMouse/1.9;
 let leftLight = screen.width-widthLight/1.5;
 let topLight = screen.height/2 - heightMouse/1.9 + heightMouse/2 - heightLight/2;
+console.log(topMouse);
 
-console.log(w,h);
+// console.log(w,h);
 
 //window popup
 let mousePop=window.open('popup/index.html','','width='+widthMouse+',height='+heightMouse+',left ='+leftMouse+',top ='+topMouse);
@@ -100,8 +101,12 @@ function rotateLight(){
   let id = "hi";
   let lightbox = lightPop.document.getElementById("img");
 
-  if(screenPos[id].x >= 1180){
-    let angle = scale(screenPos[id].y, 20,560,-45,45);
+  let centerX = leftMouse + widthMouse/2;
+  let centerY = topMouse + heightMouse/2;
+  console.log(centerX,centerY);
+
+  if(screenPos[id].x >= (centerX + widthMouse/2)){
+    let angle = scale(screenPos[id].y, 0,(centerX + widthMouse/2),-45,45);
     lightbox.animate([
       // keyframes
       { transform: 'rotate('+angle +'deg)'}
@@ -112,8 +117,8 @@ function rotateLight(){
       fill: 'forwards',
       origin: 'center'
     });
-  }else if(screenPos[id].x > 860 &&  screenPos[id].y < 30){
-    let angle = scale(screenPos[id].x, 860,1200,270,315);
+  }else if(screenPos[id].x > centerX &&  screenPos[id].y < (centerY - heightMouse/2)){
+    let angle = scale(screenPos[id].x, centerX,(centerX + widthMouse/2),270,315);
     lightbox.animate([
       // keyframes
       { transform: 'rotate('+angle +'deg)'}
@@ -125,8 +130,8 @@ function rotateLight(){
       origin: 'center'
     });
 
-  }else if(screenPos[id].x > 860 &&  screenPos[id].y > 540 ){
-    let angle = scale(screenPos[id].x, 1200,860,45,90);
+  }else if(screenPos[id].x > centerX &&  screenPos[id].y > (centerY-heightMouse/3) ){
+    let angle = scale(screenPos[id].x, (centerX + widthMouse/2),centerX,45,90);
     lightbox.animate([
       // keyframes
       { transform: 'rotate('+angle +'deg)'}
@@ -137,8 +142,8 @@ function rotateLight(){
       fill: 'forwards',
       origin: 'center'
     });
-  }else if(screenPos[id].x > 550 &&  screenPos[id].y < 30 && screenPos[id].x <860){
-    let angle = scale(screenPos[id].x,530,860,225,270);
+  }else if(screenPos[id].x > (centerX-widthMouse/2) &&  screenPos[id].y < (centerY - heightMouse/2) && screenPos[id].x <centerX){
+    let angle = scale(screenPos[id].x,(centerY+heightMouse/2),centerX,225,270);
     lightbox.animate([
       // keyframes
       { transform: 'rotate('+angle +'deg)'}
@@ -149,8 +154,8 @@ function rotateLight(){
       fill: 'forwards',
       origin: 'center'
     });
-  }else if(screenPos[id].x > 550 &&  screenPos[id].y >540 && screenPos[id].x <860){
-    let angle = scale(screenPos[id].x, 860,530,90,135,);
+  }else if(screenPos[id].x > (centerX-widthMouse/2) &&  screenPos[id].y >(centerY-heightMouse/3) && screenPos[id].x <centerX){
+    let angle = scale(screenPos[id].x, centerX,(centerY+heightMouse/2),90,135,);
     lightbox.animate([
       // keyframes
       { transform: 'rotate('+angle +'deg)'}
@@ -162,8 +167,8 @@ function rotateLight(){
       origin: 'center'
     });
 
-  }else if(screenPos[id].x <550){
-    let angle = scale(screenPos[id].y,560,20,135,225);
+  }else if(screenPos[id].x <(centerX-widthMouse/2)){
+    let angle = scale(screenPos[id].y,(centerY+heightMouse/2),0,135,225);
     lightbox.animate([
       // keyframes
       { transform: 'rotate('+angle +'deg)'}
@@ -303,7 +308,7 @@ socket.on("allAngles",(data)=>{
     let id = keys[i];
     newAngle[id] = {};
     newAngle[id].num = data[id].num;
-    console.log(newAngle[id].num);
+    // console.log(newAngle[id].num);
   }
 });
 
