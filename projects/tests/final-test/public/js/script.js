@@ -213,7 +213,7 @@ function rotateMouse(img){
 };
 
 
-function display(x,y,img,angle){
+function display(x,y,img){
 
   // console.log(screenPos);
 
@@ -245,8 +245,10 @@ function display(x,y,img,angle){
     fill: 'forwards'
   });
 
+  // rotateMouse(img);
+}
 
-
+function imageRotate(angle,img){
   img.animate([
     // keyframes
     { transform: 'rotate('+angle +'deg)'}
@@ -258,11 +260,9 @@ function display(x,y,img,angle){
     origin: 'center'
   });
 
-  // rotateMouse(img);
 }
 
-
-function displayOthers(x,y,img,angle){
+function displayOthers(x,y,img){
   let xpos = scale(x, 0,500,0,w);
   let ypos = scale(y, 0,500,0,h);
 
@@ -290,17 +290,6 @@ function displayOthers(x,y,img,angle){
     iterations: 1,
     fill: 'forwards'
   });
-
-  img.animate([
-    // keyframes
-    { transform: 'rotate('+angle +'deg)'}
-  ], {
-    // timing options
-    duration: 1000,
-    iterations: 1,
-    fill: 'forwards',
-    origin: 'center'
-  });
 }
 
 socket.on("mouseNAme", (data)=>{
@@ -324,6 +313,7 @@ socket.on("mousePoses", (data)=>{
   // console.log(id);
   //putting the key(id) names in an array
   let keys = Object.keys(data);
+  // rotateMouse();
   // console.log();
   //getting the updated positions of each object on the server
   for (let i = 0; i < keys.length; i ++){
@@ -349,14 +339,16 @@ socket.on("mousePoses", (data)=>{
 
   // console.log(id);
   var cursor = document.getElementById(id);
-  display(data[id].x,data[id].y,cursor,newAngle[id].num);
+  display(data[id].x,data[id].y,cursor);
   rotateMouse();
+  imageRotate(newAngle[id].num,cursor);
 
   for (let i = 0; i < keys.length; i ++){
     let calling = keys[i];
     var others = document.getElementById(calling);
     // console.log(data[calling]);
-    displayOthers(data[calling].x,data[calling].y,others,newAngle[calling].num);
+    displayOthers(data[calling].x,data[calling].y,others);
+    imageRotate(newAngle[calling].num,others);
   }
 
   // deleting id images that have been removed from server
