@@ -178,7 +178,7 @@ function rotateLight(){
 }
 
 
-function rotateMouse(){
+function rotateMouse(img){
   let id = "hi";
   let id2 = myID[0];
   rotateAngle[id2] = {};
@@ -213,7 +213,7 @@ function rotateMouse(){
 };
 
 
-function display(x,y,img){
+function display(x,y,img,angle){
 
   // console.log(screenPos);
 
@@ -243,6 +243,19 @@ function display(x,y,img){
     duration: 1000,
     iterations: 1,
     fill: 'forwards'
+  });
+
+
+
+  img.animate([
+    // keyframes
+    { transform: 'rotate('+angle +'deg)'}
+  ], {
+    // timing options
+    duration: 1000,
+    iterations: 1,
+    fill: 'forwards',
+    origin: 'center'
   });
 
   // rotateMouse(img);
@@ -336,7 +349,7 @@ socket.on("mousePoses", (data)=>{
 
   // console.log(id);
   var cursor = document.getElementById(id);
-  display(data[id].x,data[id].y,cursor);
+  display(data[id].x,data[id].y,cursor,newAngle[id].num);
   rotateMouse();
 
   for (let i = 0; i < keys.length; i ++){
