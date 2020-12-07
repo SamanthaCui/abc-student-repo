@@ -31,14 +31,14 @@ function openWindow1(){
   var x = event.clientX;
   var y = event.clientY;
 
-  let xpos = scale(x, 0,500,0,w);
-  let ypos = scale(y, 0,500,0,h);
+  // let xpos = scale(x, 0,500,0,w);
+  // let ypos = scale(y, 0,500,0,h);
 
   //saving popup mouse positions in an object
   let id = "hi";
   positions[id] = {};
-  positions[id].x = xpos;
-  positions[id].y = ypos;
+  positions[id].x = x;
+  positions[id].y = y;
 
   //sending the object to server
   socket.emit('mouse positions', positions);
@@ -62,20 +62,23 @@ setTimeout(function(){
 
 function display(x,y,img){
 
+  let xpos = scale(x, 0,500,0,w);
+  let ypos = scale(y, 0,500,0,h);
+
   //styling and animation of each cursor image
   let distance = widthMouse-x;
 
   let size = scale(distance, 0,widthMouse,50,200);
 
-  let blurAmount = w - x;
+  let blurAmount = w - xpos;
   let amount = scale(blurAmount, 0,widthMouse,0,10);
 
   img.style.position="absolute";
   img.style.position="absolute";
   img.style.width=size+"px";
   img.style.height=size+"px";
-  img.style.top=y+"px";
-  img.style.left=x+"px";
+  img.style.top=ypos+"px";
+  img.style.left=xpos+"px";
 
   img.animate([
     // keyframes
