@@ -25,6 +25,8 @@ let mousePop=window.open('popup/index.html','','width='+widthMouse+',height='+he
 
 let lightPop=window.open('light/index.html','','width='+widthLight+',height='+heightLight+',left ='+leftLight+',top ='+topLight);
 
+console.log(lightPop.screenX,lightPop.screen);
+
 
 function openWindow1(){
   //getting mouse position from popup
