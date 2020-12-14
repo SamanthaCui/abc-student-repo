@@ -5,22 +5,32 @@
 ## Inspirations
 [Allegory of the cave](https://en.wikipedia.org/wiki/Allegory_of_the_cave).
 
-## Paper Prototype
+## Original Paper Prototype
 ![paper-prototype](img/paper.png)
 
+## Final Paper Prototype
+![paper-prototype](img/idea.png)
+
 ## Quick Access
-The website can be easily accessed [here](https://sam-cursor-shadow.glitch.me/). 
+The website can be easily accessed [here](https://sam-cursor-shadow.glitch.me/).
 
 ## Description
-This project takes inspiration from the Alcohol Art form. Utilizing CSS animation, it hopes to recreate the process of when watery paint meeting each other and blending.
+Inspired by Plato's Cave, this project seeks to explore different layers of the cave in a two-dimensional webpage setting. As you open the page, it will open into three windows. As you turn on the light switch, you would see that the middle window is a playground for your mouse to move. On the contrary, the main window won't show your mouse but only the shadow of your mouse. You could also drag the third window where there's a light source to change the shape and sizes of your shadow. As other users join in, you could see their shadows on the shadow plaza. Now you could work with other users and form various shadow shapes.   
 
-## Challenges
-For the first version of my project, it was more of a "performance". There was no interaction. I was happy with the visual effects. But it still felt like something was missing. I then discussed it with Professor Leon on how we could make it more interactive. Through several rounds of changes, it led to the current version.
+## Technical Challenges
+For this project, the main technical challenge was figuring out the right logic and order to how the data should be sent between the main window and the popup window, and between the server and each user. Professor helped me to draw a logic map to better understand. This was one of the main problems that confused me during the project de3velopment.  
 
-![Animated Cover](img/demo-1.gif)
+![logicmap](img/logic.png)
+
+
+Another issue I ran into besides the logic was how I could make the image appear on every client's page. At first,  each client could receive all the data from other clients, but the image of the cursor could only be drawn once. After trying several methods of using arrays and for loops, I've realized I've been drawing in the wrong function where I got lost between the data transporting. After re-organizing the code, I found the right place where the image would be drawn every time.
+
+The last challenge I had to face was figuring out the right mathematical relationship between how the light source rotation would affect the shadow. Even though in the end it didn't seem to work that well, while designing this function, I went over each keypoint individually on how the rotation would be. I think I should've played with shadows more to find the correct relationship. But I find the method of drawing the points one by one to be very helpful to clear the mess in my head.
+![angle](img/angle.png)
+
 
 ## Compromises
-Unlike other javascript libraries, it's rather difficult trying to make curvy shapes using CSS. So I had to come up with an alternative way to create how the paint will spread on the "paper". I've tried using ovals, but it seemed messy. So in the end, I had to settle with creating circles. I layered them with each other than adjusted the opacity. I then took advice from the professor and coded that multiple circles would be created on a single mouse click. It gave it a perfect liquid touch. :D
+The main compromise I had to make was trying to fit the shadow idea into a flat-screen. From the inspirations I've seen, it's clear that all of them had a z-axis relationship within them. So it's the question of how could I find that relationship within webpage windows. I ended up using popup because I thought the different window sizes and being able to be on top of each other would create that visual effect. But it turns out it's not that clear and it brings up the issue of which popup window is being focused on would end up being the top one. Even after class, the professor and I were brainstorming ideas on how the interface could be better designed. We brought up some interesting ideas that I would love to try out.
 
 ## Shortcomings
 For the version now, sometimes it doesn't respond when you tap. It will work if you tap again harder. I'm still uncertain what is causing this glitch. Hopefully, I'll fix it in the future. :)
